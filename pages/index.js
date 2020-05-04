@@ -20,6 +20,19 @@ export default function Home() {
         <meta name="twitter:site" content="@joecohens" />
         <meta name="twitter:creator" content="@joecohens" />
         <script type="application/ld+json" dangerouslySetInnerHTML= {{ __html: JSON.stringify(applicationJson) }} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(v,i,n,k,l,a){v.GoogleAnalyticsObject=n;v[n]||(v[n]=function(){
+              (v[n].q=v[n].q||[]).push(arguments)});v[n].l=+new Date;l=i.createElement(k);
+              a=i.getElementsByTagName(k)[0];l.src='https://google-analytics.com/analytics.js';
+              a.parentNode.insertBefore(l,a)}(window,document,'ga','script');
+              ga('create', 'UA-85213054-1', 'joecohens.com');
+              ga('require', 'displayfeatures');
+              ga('send', 'pageview');
+            `,
+          }}
+        />
       </Head>
 
       <main>
