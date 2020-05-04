@@ -42,28 +42,28 @@ export default function Home() {
         </header>
         <section>
           <p>
-            Head of Infrastructure <a href="https://github.com/zeit" className="user-mention">@Vercel</a>
+            Head of Infrastructure <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="user-mention">@Vercel</a>
           </p>
           <hr />
           <p>
-            Co-Founder &amp; CTO <a href="https://github.com/dinkbit" className="user-mention">@dinkbit</a>
+            Co-Founder &amp; CTO <a href="https://dinkbit.com" target="_blank" rel="noopener noreferrer" className="user-mention">@dinkbit</a>
             <br />
-            Co-Founder &amp; Board <a href="https://kodemia.dev" className="user-mention">@kodemia</a> <a href="https://refly.me" className="user-mention">@reflyme</a> <a href="https://kometia.com" className="user-mention">@kometia</a> <a href="https://divya.com.mx" className="user-mention">@divya</a>
+            Co-Founder &amp; Board <a href="https://kodemia.dev" target="_blank" rel="noopener noreferrer" className="user-mention">@kodemia</a> <a href="https://refly.me" target="_blank" rel="noopener noreferrer" className="user-mention">@refly</a> <a href="https://kometia.com" target="_blank" rel="noopener noreferrer" className="user-mention">@kometia</a> <a href="https://divya.com.mx" className="user-mention">@divya</a>
             <br />
-            Contributor <a href="https://github.com/CachetHQ" className="user-mention">@CachetHQ</a> and <a href="https://github.com/StyleCI" className="user-mention">@StyleCI</a>
+            Contributor <a href="https://github.com/CachetHQ" target="_blank" rel="noopener noreferrer" className="user-mention">@CachetHQ</a> and <a href="https://styleci.io" target="_blank" rel="noopener noreferrer" className="user-mention">@StyleCI</a>
           </p>
         </section>
         <footer>
           <hr />
           <p>
-            Ping me on <a href="https://github.com/joecohens" title="Joe on GitHub">GitHub</a> or <a href="https://twitter.com/joecohens" title="Joe on Twitter">Twitter</a>. <a href="https://github.com/joecohens/joecohens.github.io/blob/master/LICENSE" title="The license file on GitHub">© MIT 2020</a>
+            Ping me on <a href="https://github.com/joecohens" title="Joe on GitHub">GitHub</a> or <a href="https://twitter.com/joecohens" title="Joe on Twitter">Twitter</a>. <a href="https://github.com/joecohens/joecohens/blob/master/LICENSE" title="The license file on GitHub">© MIT 2020</a>
           </p>
         </footer>
       </main>
 
       <style jsx>{`
         main {
-          margin: 0 auto;
+          margin: 0 40px;
           max-width: 700px;
         }
 
@@ -91,6 +91,12 @@ export default function Home() {
 
         time {
           color: #9b9b9b;
+        }
+
+        @media (min-width: 900px) {
+          main {
+            margin: 0 auto;
+          }
         }
       `}</style>
 
