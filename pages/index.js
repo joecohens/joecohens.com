@@ -42,7 +42,7 @@ export default function Home() {
         </header>
         <section>
           <p>
-            Head of Infrastructure <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="user-mention">@Vercel</a>
+            Head of Engineering <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="user-mention">@Vercel</a>
           </p>
           <hr />
           <p>
