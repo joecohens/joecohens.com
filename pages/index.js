@@ -1,6 +1,20 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-const applicationJson = {"@type":"WebSite","headline":"Joe Cohen","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://github.com/joecohens.png"},"name":"Joe Cohen"},"url":"https://joecohens.com/","name":"Joe Cohen","author":{"@type":"Person","name":"Joe Cohen"},"image":"https://github.com/joecohens.png","description":"&lt;/&gt;","@context":"http://schema.org"};
+const applicationJson = {
+  "@type": "WebSite",
+  headline: "Joe Cohen",
+  publisher: {
+    "@type": "Organization",
+    logo: { "@type": "ImageObject", url: "https://github.com/joecohens.png" },
+    name: "Joe Cohen",
+  },
+  url: "https://joecohens.com/",
+  name: "Joe Cohen",
+  author: { "@type": "Person", name: "Joe Cohen" },
+  image: "https://github.com/joecohens.png",
+  description: "&lt;/&gt;",
+  "@context": "http://schema.org",
+};
 
 export default function Home() {
   return (
@@ -10,8 +24,14 @@ export default function Home() {
         <meta property="og:title" content="Joe Cohen" />
         <meta name="author" content="Joe Cohen" />
         <meta property="og:locale" content="en_US" />
-        <meta name="description" content="Entrepreneur & Full Stack Developer and Designer" />
-        <meta property="og:description" content="Entrepreneur & Full Stack Developer and Designer" />
+        <meta
+          name="description"
+          content="Co-Founder & CTO at Draftea | Multipreneur"
+        />
+        <meta
+          property="og:description"
+          content="Co-Founder & CTO at Draftea | Multipreneur"
+        />
         <link rel="canonical" href="https://joecohens.com/" />
         <meta property="og:url" content="https://joecohens.com/" />
         <meta property="og:site_name" content="Joe Cohen" />
@@ -19,7 +39,10 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@joecohens" />
         <meta name="twitter:creator" content="@joecohens" />
-        <script type="application/ld+json" dangerouslySetInnerHTML= {{ __html: JSON.stringify(applicationJson) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(applicationJson) }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -37,26 +60,114 @@ export default function Home() {
 
       <main>
         <header>
-          <h1><a href="https://github.com/joecohens" title="View Joe's GitHub Profile Page">Joe Cohen</a></h1>
-          <p>Entrepreneur &amp; Full Stack Developer and Designer</p>
+          <h1>
+            <a
+              href="https://github.com/joecohens"
+              title="View Joe's GitHub Profile Page"
+            >
+              Joe Cohen
+            </a>
+          </h1>
+          <p>
+            CTO &amp; Co-Founder{" "}
+            <a
+              href="https://www.draftea.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="user-mention"
+            >
+              @Draftea
+            </a>
+          </p>
         </header>
         <section>
           <p>
-            Head of Engineering <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="user-mention">@Vercel</a>
+            EX - Head of Engineering{" "}
+            <a
+              href="https://vercel.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="user-mention"
+            >
+              @Vercel
+            </a>
           </p>
           <hr />
           <p>
-            Co-Founder &amp; CTO <a href="https://dinkbit.com" target="_blank" rel="noopener noreferrer" className="user-mention">@dinkbit</a>
+            Board &amp; Co-Founder{" "}
+            <a
+              href="https://dinkbit.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="user-mention"
+            >
+              @dinkbit
+            </a>
             <br />
-            Co-Founder &amp; Board <a href="https://kodemia.dev" target="_blank" rel="noopener noreferrer" className="user-mention">@kodemia</a> <a href="https://refly.me" target="_blank" rel="noopener noreferrer" className="user-mention">@refly</a> <a href="https://kometia.com" target="_blank" rel="noopener noreferrer" className="user-mention">@kometia</a> <a href="https://divya.com.mx" className="user-mention">@divya</a>
+            Board{" "}
+            <a
+              href="https://divya.com.mx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="user-mention"
+            >
+              @divya
+            </a>{" "}
+            <a
+              href="https://kodemia.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="user-mention"
+            >
+              @kodemia
+            </a>{" "}
+            <a
+              href="https://kometia.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="user-mention"
+            >
+              @kometia
+            </a>{" "}
             <br />
-            Contributor <a href="https://github.com/CachetHQ" target="_blank" rel="noopener noreferrer" className="user-mention">@CachetHQ</a> and <a href="https://styleci.io" target="_blank" rel="noopener noreferrer" className="user-mention">@StyleCI</a>
+            Contributor{" "}
+            <a
+              href="https://github.com/CachetHQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="user-mention"
+            >
+              @CachetHQ
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://styleci.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="user-mention"
+            >
+              @StyleCI
+            </a>
           </p>
         </section>
         <footer>
           <hr />
           <p>
-            Ping me on <a href="https://github.com/joecohens" title="Joe on GitHub">GitHub</a> or <a href="https://twitter.com/joecohens" title="Joe on Twitter">Twitter</a>. <a href="https://github.com/joecohens/joecohens/blob/master/LICENSE" title="The license file on GitHub">© MIT 2020</a>
+            Ping me on{" "}
+            <a href="https://github.com/joecohens" title="Joe on GitHub">
+              GitHub
+            </a>{" "}
+            or{" "}
+            <a href="https://twitter.com/joecohens" title="Joe on Twitter">
+              Twitter
+            </a>
+            .{" "}
+            <a
+              href="https://github.com/joecohens/joecohens/blob/master/LICENSE"
+              title="The license file on GitHub"
+            >
+              © MIT {new Date().getFullYear()}
+            </a>
           </p>
         </footer>
       </main>
@@ -105,7 +216,12 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: Menlo, Monaco, Lucida Console, monospace, serif;
+          font-family:
+            Menlo,
+            Monaco,
+            Lucida Console,
+            monospace,
+            serif;
           font-size: 0.9375rem;
           line-height: 1.625rem;
         }
@@ -130,5 +246,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
