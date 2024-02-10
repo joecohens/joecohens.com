@@ -1,50 +1,37 @@
 import "./globals.css";
-import Head from "next/head";
 import { Providers } from "./providers";
 
-const metadata = {
-  "@type": "WebSite",
-  headline: "Joe Cohen",
-  publisher: {
-    "@type": "Organization",
-    logo: { "@type": "ImageObject", url: "https://github.com/joecohens.png" },
-    name: "Joe Cohen",
+export const metadata = {
+  title: "Joe Cohen",
+  description: "Co-Founder & CTO at Draftea | Multipreneur | Investor",
+  openGraph: {
+    title: "Joe Cohen",
+    description: "Co-Founder & CTO at Draftea | Multipreneur | Investor",
+    title: "Next.js",
+    url: "https://joecohens.com",
+    siteName: "Joe Cohen",
+    images: [
+      {
+        url: "https://github.com/joecohens.png", // Must be an absolute URL
+        width: 460,
+        height: 460,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
-  url: "https://joecohens.com/",
-  name: "Joe Cohen",
-  author: { "@type": "Person", name: "Joe Cohen" },
-  image: "https://github.com/joecohens.png",
-  description: "&lt;/&gt;",
-  "@context": "http://schema.org",
+  twitter: {
+    card: "summary_large_image",
+    site: "@joecohens",
+    creator: "@joecohens",
+  },
+  metadataBase: new URL("https://joecohens.com"),
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <Head>
-        <title>Joe Cohen</title>
-        <meta property="og:title" content="Joe Cohen" />
-        <meta name="author" content="Joe Cohen" />
-        <meta property="og:locale" content="en_US" />
-        <meta
-          name="description"
-          content="Co-Founder & CTO at Draftea | Multipreneur | Investor"
-        />
-        <meta
-          property="og:description"
-          content="Co-Founder & CTO at Draftea | Multipreneur | Investor"
-        />
-        <link rel="canonical" href="https://joecohens.com/" />
-        <meta property="og:url" content="https://joecohens.com/" />
-        <meta property="og:site_name" content="Joe Cohen" />
-        <meta property="og:image" content="https://github.com/joecohens.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@joecohens" />
-        <meta name="twitter:creator" content="@joecohens" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(metadata) }}
-        />
+    <html lang="en" suppressHydrationWarning={true}>
+      <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -58,7 +45,7 @@ export default function RootLayout({ children }) {
           `,
           }}
         />
-      </Head>
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>
