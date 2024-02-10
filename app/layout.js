@@ -1,5 +1,6 @@
 import "./globals.css";
 import Head from "next/head";
+import { Providers } from "./providers";
 
 const metadata = {
   "@type": "WebSite",
@@ -19,7 +20,7 @@ const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <Head>
         <title>Joe Cohen</title>
         <meta property="og:title" content="Joe Cohen" />
@@ -27,11 +28,11 @@ export default function RootLayout({ children }) {
         <meta property="og:locale" content="en_US" />
         <meta
           name="description"
-          content="Co-Founder & CTO at Draftea | Multipreneur"
+          content="Co-Founder & CTO at Draftea | Multipreneur | Investor"
         />
         <meta
           property="og:description"
-          content="Co-Founder & CTO at Draftea | Multipreneur"
+          content="Co-Founder & CTO at Draftea | Multipreneur | Investor"
         />
         <link rel="canonical" href="https://joecohens.com/" />
         <meta property="og:url" content="https://joecohens.com/" />
@@ -58,7 +59,9 @@ export default function RootLayout({ children }) {
           }}
         />
       </Head>
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
