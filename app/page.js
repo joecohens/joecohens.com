@@ -2,7 +2,11 @@
 import { useTheme } from "next-themes";
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, systemTheme } = useTheme();
+
+  if (theme === systemTheme) {
+    setTheme("system");
+  }
 
   return (
     <main className="md:py-10">
@@ -22,7 +26,7 @@ export default function Home() {
             href="https://www.draftea.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-black hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
+            className="dark:hover:text-blackjjk font-black hover:bg-black hover:text-white dark:hover:bg-white"
           >
             @Draftea
           </a>
