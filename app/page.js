@@ -26,7 +26,7 @@ export default function Home() {
             href="https://www.draftea.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="dark:hover:text-blackjjk font-black hover:bg-black hover:text-white dark:hover:bg-white"
+            className="font-black hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
           >
             @Draftea
           </a>
