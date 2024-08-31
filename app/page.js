@@ -54,9 +54,7 @@ export default function Home() {
             className="font-black hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
           >
             @dinkbit
-          </a>
-          <br />
-          Board{" "}
+          </a>{" "}
           <a
             href="https://divya.com.mx"
             target="_blank"
@@ -64,23 +62,7 @@ export default function Home() {
             className="font-black hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
           >
             @divya
-          </a>{" "}
-          <a
-            href="https://kodemia.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-black hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
-          >
-            @kodemia
-          </a>{" "}
-          <a
-            href="https://kometia.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-black hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
-          >
-            @kometia
-          </a>{" "}
+          </a>
           <br />
           Contributor{" "}
           <a
